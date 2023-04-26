@@ -50,5 +50,5 @@
         status: "{{out.rc}}"  #rc is return code which is output of uptime command executed
 
     - name: print status
-      ansible .builtin.debug:
+      ansible.builtin.debug:
         msg: "{{status}}"
