@@ -22,7 +22,7 @@
   tasks:
     - name: print play variables from task level
       vars: ##this variable is only for task level, for next level this variable cannot be accessed
-        URL = task.example.com
+        URL: task.example.com
       ansible.builtin.debug:
         msg: URL = {{ URL }}
 
