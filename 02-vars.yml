@@ -48,3 +48,7 @@
     - name: declare a variable #this variable is declared from the output of command uptime
       ansible.builtin.set_fact:
         status: "{{out.rc}}"  #rc is return code which is output of uptime command executed
+
+    - name: print status
+      ansible .builtin.debug:
+        msg: {{"status"}}
