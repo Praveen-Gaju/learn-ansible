@@ -51,4 +51,4 @@
 
     - name: print status
       ansible .builtin.debug:
-        msg: {{"status"}}
+        msg: "{{status}}"
