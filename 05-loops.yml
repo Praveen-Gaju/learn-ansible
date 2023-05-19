@@ -9,3 +9,13 @@
         - banana
         - mango
         - orange
+
+
+    - name: Print Fruit name with quantity
+      debug:
+        msg: fruit name  - {{  }}, Quantity - {{  }}
+      loop:
+        - { name: "Apple", quantity: 10 }
+        - { name: "Banana", quantity: 20 }
+        - { name: "Mango", quantity: 5 }
+        - { name: "Orange", quantity: 15 }
