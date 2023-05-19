@@ -13,7 +13,7 @@
 
     - name: Print Fruit name with quantity
       debug:
-        msg: fruit name  - {{  }}, Quantity - {{  }}
+        msg: fruit name  - {{ item.name }}, Quantity - {{ item.quantity }}
       loop:
         - { name: "Apple", quantity: 10 }
         - { name: "Banana", quantity: 20 }
